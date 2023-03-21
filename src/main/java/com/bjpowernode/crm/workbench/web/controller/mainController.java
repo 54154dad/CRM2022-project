@@ -1,0 +1,17 @@
+package com.bjpowernode.crm.workbench.web.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+/**
+ * @Classname mainController
+ * @Date 2022/12/26
+ * @Created by YQ
+ */
+@Controller
+public class mainController {
+    @RequestMapping("/workbench/main/index.do")
+    public String index(){
+        return "workbench/main/index";
+    }
+}
