@@ -397,7 +397,7 @@ public class activityController {
              System.out.println("gitee test!");
               System.out.println("gitee test2!");
                System.out.println("gitee test3!");
-             System.out.println("gitee test!");
+                 System.out.println("gitee test4!");
         }
     }
 
