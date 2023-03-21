@@ -394,8 +394,12 @@ public class activityController {
             System.out.println("hot-fix test!");
             System.out.println("push test!");
              System.out.println("pull test!");
-             System.out.println("gitee test!");
-             System.out.println("gitee test!");
+             System.out.println("gitee test1!");
+             System.out.println("gitee test2!");
+             System.out.println("gitee test3!");
+             System.out.println("gitee test4!");
+             System.out.println("gitee test5!");
+
         }
     }
 
