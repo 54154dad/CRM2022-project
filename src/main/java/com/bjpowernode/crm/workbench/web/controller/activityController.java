@@ -391,6 +391,7 @@ public class activityController {
             System.out.println("第二次修改还");
             System.out.println("第三次修改还");
             System.out.println("master test");
+            System.out.println("hot-fix test!");
         }
     }
 
