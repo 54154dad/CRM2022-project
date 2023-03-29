@@ -97,4 +97,8 @@ public interface MarketingActivitiesMapper {
      * 返回List集合
      */
     List<Activity> selectActivityByIds(String[] ids);
+
+    int insertActivityByList(List<Activity> activityList);
+
+    Activity selectActivityForDetailById(String id);
 }

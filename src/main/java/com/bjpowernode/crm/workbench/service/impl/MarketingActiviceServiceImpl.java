@@ -74,5 +74,15 @@ public class MarketingActiviceServiceImpl implements MarketingActivityService {
         return marketingActivitiesMapper.selectActivityByIds(ids);
     }
 
+    @Override
+    public int saveCreateActivityByList(List<Activity> activityList) {
+        return marketingActivitiesMapper.insertActivityByList(activityList);
+    }
+
+    @Override
+    public Activity queryActivityForDetail(String id) {
+        return marketingActivitiesMapper.selectActivityForDetailById(id);
+    }
+
 
 }

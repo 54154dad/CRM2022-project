@@ -28,4 +28,7 @@ public interface MarketingActivityService {
 
      List<Activity> selectActivityByIds(String[] ids);
 
+     int saveCreateActivityByList(List<Activity> activityList);
+
+     Activity queryActivityForDetail(String id);
 }
