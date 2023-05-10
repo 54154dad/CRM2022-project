@@ -32,6 +32,12 @@ public interface MarketingActivityService {
      int saveCreateActivityByList(List<Activity> activityList);
 
      Activity queryActivityForDetail(String id);
+     
+
+     List<Activity> queryActivityForDetailByNameClueId(Map<String, Object> map);
+
+
+     List<Activity> queryActivityForDetailByIds(String[] ids);
 
      List<Activity> queryActivityForDetailByClueId(String clueId);
 }
