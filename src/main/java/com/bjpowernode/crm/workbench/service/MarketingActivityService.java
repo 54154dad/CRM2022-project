@@ -1,6 +1,7 @@
 package com.bjpowernode.crm.workbench.service;
 
 import com.bjpowernode.crm.workbench.model.Activity;
+import com.bjpowernode.crm.workbench.model.Clue;
 
 import java.util.List;
 import java.util.Map;
@@ -31,4 +32,6 @@ public interface MarketingActivityService {
      int saveCreateActivityByList(List<Activity> activityList);
 
      Activity queryActivityForDetail(String id);
+
+     List<Activity> queryActivityForDetailByClueId(String clueId);
 }

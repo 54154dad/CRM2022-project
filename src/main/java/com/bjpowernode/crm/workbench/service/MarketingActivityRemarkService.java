@@ -11,4 +11,10 @@ import java.util.List;
  */
 public interface MarketingActivityRemarkService {
     List<ActivityRemark> queryActivityRemarkForDetailByActivityId(String activityId);
+
+    int saveCreateActivityRemark(ActivityRemark activityRemark);
+
+    int deleteActivityRemark(String id);
+
+    int saveEditActivityRemark(ActivityRemark activityRemark);
 }

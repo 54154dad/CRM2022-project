@@ -22,4 +22,19 @@ public class MarketingActiviceRemarkServiceImpl implements MarketingActivityRema
     public List<ActivityRemark> queryActivityRemarkForDetailByActivityId(String activityId) {
         return activityRemarkMapper.selectActivityRemarkForDetailByActivityId(activityId);
     }
+
+    @Override
+    public int saveCreateActivityRemark(ActivityRemark activityRemark) {
+        return activityRemarkMapper.insertActivityRemark(activityRemark);
+    }
+
+    @Override
+    public int deleteActivityRemark(String id) {
+        return activityRemarkMapper.deleteActivityRemark(id);
+    }
+
+    @Override
+    public int saveEditActivityRemark(ActivityRemark activityRemark) {
+        return activityRemarkMapper.updateActivityRemark(activityRemark);
+    }
 }

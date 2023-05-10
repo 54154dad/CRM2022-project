@@ -487,13 +487,14 @@ public class activityController {
         return returnObject;
     }
     /**
-     * 查看市场活动明细
+     * 查看市场活动备注明细
      */
     @RequestMapping("/workbench/activity/detailActivity.do")
     public String DetailActivity(String id,HttpServletRequest request){
         //调用service层方法查询数据
         Activity activity = marketingActivityService.queryActivityForDetail(id);
         List<ActivityRemark> activityRemarksList = marketingActivityRemarkService.queryActivityRemarkForDetailByActivityId(id);
+
         //把数据保存到request中
         request.setAttribute("activity",activity);
         request.setAttribute("activityRemarksList",activityRemarksList);

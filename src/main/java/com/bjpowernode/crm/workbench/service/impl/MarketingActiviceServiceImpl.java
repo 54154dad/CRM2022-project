@@ -84,5 +84,10 @@ public class MarketingActiviceServiceImpl implements MarketingActivityService {
         return marketingActivitiesMapper.selectActivityForDetailById(id);
     }
 
+    @Override
+    public List<Activity> queryActivityForDetailByClueId(String clueId) {
+        return marketingActivitiesMapper.selectActivityForDetailByClueId(clueId);
+    }
+
 
 }
